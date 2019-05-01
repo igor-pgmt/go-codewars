@@ -5,6 +5,7 @@
 package main
 
 import (
+	"fmt"
 	"strings"
 	"unicode/utf8"
 )
@@ -51,4 +52,13 @@ func Solution5(word string) (result string) {
 		result = string(c) + result
 	}
 	return result
+}
+
+func main() {
+	word := "word"
+	fmt.Println(Solution1(word))
+	fmt.Println(Solution2(word))
+	fmt.Println(Solution3(word))
+	fmt.Println(Solution4(word))
+	fmt.Println(Solution5(word))
 }
